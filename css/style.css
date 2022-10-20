@@ -512,3 +512,41 @@ header{
     height: 440px;
     object-fit: cover;
 }
+
+.download{
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.download h2{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1.6rem 0;
+}
+
+.download-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.download-links a{
+    text-align: center;
+    background: var(--main-color);
+    padding: 12px 20px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.download-links a:hover{
+    background: var(--light-color);
+    transition: all 0.0s linear;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%, 0% 68%);
+}
