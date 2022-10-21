@@ -562,14 +562,16 @@ html::-webkit-scrollbar{
     width: 0%;
 }
 
-.screenshots-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .screenshots-content img{
     border-radius: 0.5rem;
+}
+
+.new .bx{
+    margin-top: 1rem;
+}
+
+.new h2{
+    margin-top: 1rem;
 }
 
 /* responsive-page */
@@ -630,6 +632,11 @@ html::-webkit-scrollbar{
     .screenshots-content{
         grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     }
+    .screenshots-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 560px){
@@ -664,6 +671,11 @@ html::-webkit-scrollbar{
     }
     .download-links{
         grid-template-columns: 1fr;
+    }
+    .screenshots-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -703,5 +715,13 @@ html::-webkit-scrollbar{
     }
     .copyright .logo{
         margin: 0;
+    }
+    .about h2 ,.screenshots h2 {
+        font-size: 1.2rem;
+    }
+    .screenshots-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
