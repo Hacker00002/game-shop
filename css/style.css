@@ -552,12 +552,156 @@ html::-webkit-scrollbar{
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 6px;
     z-index: 300;
 }
 
 .progress-bar{
-    height: 4px;
+    height: 6px;
     background: var(--main-color);
     width: 0%;
+}
+
+.screenshots-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.screenshots-content img{
+    border-radius: 0.5rem;
+}
+
+/* responsive-page */
+@media (max-width: 1080px){
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .nav{
+        padding: 10px 0;
+    }
+    .notification{
+        right: 4rem;
+    }
+    .notification2{
+        left: 41rem;
+    }
+    .menu img{
+        width: 500px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .home{
+        margin-top: 4rem !important;
+        min-height: 400px;
+    }
+    .home img{
+        border-radius: 1rem;
+    }
+    .new-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+    .video-container{
+        margin-top: 5rem !important;
+    }
+}
+
+@media (max-width: 774px){
+    .notification{
+        right: 1rem;
+    }
+    .notification2{
+        left: 28rem;
+    }
+    .menu img{
+        width: 400px;
+    }
+    .home{
+        min-height: 300px;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .btn{
+        padding: 12px 17px;
+    }
+    .screenshots-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    }
+}
+
+@media (max-width: 560px){
+    .menu img{
+        display: none;
+    }
+    .menu{
+        justify-content: flex-end;
+    }
+    .notification2{
+        left: 15rem;
+    }
+    .nav{
+        padding: 8px 0;
+    }
+    .nav-icons .bx{
+        height: 40px;
+        width: 40px;
+    }
+    .menu-icon {
+        height: 40px;
+        width: 40px;
+    }
+    .home{
+        min-height: 240px;
+    }
+    .home-text{
+        padding-right: 1rem;
+    }
+    p {
+        font-size: 0.875rem;
+    }
+    .download-links{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 360px){
+    .logo{
+        font-size: 1.2rem;
+    }
+    .navbar a{
+        font-size: 1.3rem;
+    }
+    .navbar a:hover{
+        font-size: 1.4rem;
+    }
+    .notification{
+        width: 270px;
+    }
+    .notification2{
+        width: 270px;
+        left: 3rem;
+    }
+    .home-text h1{
+        font-size: 1.4rem;
+    }
+    .heading .bx{
+        padding: 8px;
+    }
+    .heading h2{
+        font-size: 1.1rem;
+    }
+    .box{
+        height: 420px;
+    }
+    .copyright{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+    .copyright .logo{
+        margin: 0;
+    }
 }
