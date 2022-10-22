@@ -566,14 +566,13 @@ html::-webkit-scrollbar{
     border-radius: 0.5rem;
 }
 
-.new .bx{
+/* .new .bx{
     margin-top: 1rem;
-}
+} */
 
 .new h2{
     margin-top: 1rem;
 }
-
 /* responsive-page */
 @media (max-width: 1080px){
     .container{
@@ -723,5 +722,8 @@ html::-webkit-scrollbar{
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+    .error h2, p{
+        
     }
 }
